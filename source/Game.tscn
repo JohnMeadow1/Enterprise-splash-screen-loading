@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://hgsglmdyhiwk"]
+
+[ext_resource type="Texture2D" uid="uid://b18yqi3p2sc8q" path="res://Assets/Textures/Background.png" id="1_b18k0"]
+[ext_resource type="PackedScene" uid="uid://d2wxmlsytkn8e" path="res://Scenes/Planets/Venus.tscn" id="2_xwpwh"]
+[ext_resource type="PackedScene" uid="uid://ckk1oyqtduuu5" path="res://Scenes/Planets/GasGiant.tscn" id="3_v8sjf"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_b18k0")
+centered = false
+
+[node name="GasGiant" parent="." instance=ExtResource("3_v8sjf")]
+position = Vector2(1331, 523)
+scale = Vector2(2, 2)
+
+[node name="Venus" parent="." instance=ExtResource("2_xwpwh")]
+position = Vector2(858, 656)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdxtv5svdvrml"]
+
+[ext_resource type="Texture2D" uid="uid://dx524so8bwqit" path="res://Scenes/Title/Sprites/sun.png" id="1_aggmm"]
+[ext_resource type="Texture2D" uid="uid://bxct7gf37my3b" path="res://Scenes/Title/Sprites/planet.png" id="1_hp014"]
+[ext_resource type="Texture2D" uid="uid://cohdlwuyx8245" path="res://Scenes/Title/Sprites/tail.png" id="2_em1xi"]
+[ext_resource type="Script" path="res://Scenes/Title/LoadingAnimation.gd" id="2_hbt4a"]
+
+[node name="Sun" type="Sprite2D"]
+texture = ExtResource("1_aggmm")
+script = ExtResource("2_hbt4a")
+
+[node name="Planet" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_hp014")
+
+[node name="Tail" type="Sprite2D" parent="Planet"]
+show_behind_parent = true
+rotation = 3.14159
+texture = ExtResource("2_em1xi")
+offset = Vector2(4, -18)
+hframes = 6
+frame = 5
