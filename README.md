@@ -1,5 +1,5 @@
 # splash-screen-loading
-Splash screen with background loading used in [Enterprise - Space Agency Simulator](https://store.steampowered.com/app/2579820/Enterprise__Space_Agency_Simulator/)
+Splash screen with background loading used in [Enterprise - Space Agency Simulator](https://store.steampowered.com/app/2579820?utm_source=GIT_splash)
 
 What is missing?
 Licenced SFX files are not included. 
